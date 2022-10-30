@@ -6,6 +6,7 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8.8px);
     -webkit-backdrop-filter: blur(8.8px);
+    cursor: pointer;
 }
 
 .bg-header{
@@ -15,12 +16,10 @@
     filter: grayscale(.7);
 }
 
-.bg-header-change{
-
-}
-
-.bg-header::after{
+.bg-filter{
     content: " ";
+    top: 0;
+    left: 0;
     position: absolute;
     background-color: black;
     width: 100%;
@@ -30,23 +29,31 @@
 }
 
 .bg-desapear{
-    animation: 2s desapear;
+    animation: 1s desapear-bg;
 }
 
-@keyframes desapear{
+.text-desapear{
+    animation: 1s desapear-text;
+}
+
+@keyframes desapear-bg{
     from{
-        background: linear-gradient(black, rgba(0, 0, 0, 0.719),rgba(0, 0, 0, 0.445) ,rgba(0, 0, 0, 0.719), black);
     }
     to{
         background-color: black;
     }
 }
-
+@keyframes desapear-text{
+    from{
+    }
+    to{
+        color: black;
+    }
+}
 .title-header{
     font-size: 2.5rem;
     font-family: 'Roboto', sans-serif;
     line-height: 50px;
-    color: white;
 }
 
 @media screen and (min-width: 767px) {
