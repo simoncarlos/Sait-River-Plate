@@ -10,7 +10,7 @@ const Header = ( ) =>{
 
     const changeAnimation = ( link ) => {
         setDesapear(true);
-        setTimeout(() => history( link ), 1000);
+        setTimeout(() => history( link ), 999);
     }
 
     return(
@@ -26,19 +26,18 @@ const Header = ( ) =>{
                         <p className={`text-white ${ desapear ? "text-desapear" : "" }`}>Inscribirme</p>
                         <MdPlaylistAdd className={`text-white ${ desapear ? "text-desapear" : "" }`}/>
                     </button>
-                    <a
+                    <button
                     className={`col-span-4 bg-glass p-6 flex items-center justify-between ${ desapear ? "bg-desapear" : "" }`}
                     onClick={ ()=>{ changeAnimation("/list") } }>
                         <p className={`text-white ${ desapear ? "text-desapear" : "" }`}>Listado</p>
                         <MdOutlineChecklist className={`text-white ${ desapear ? "text-desapear" : "" }`}/>
-                    </a>
-                    <a
+                    </button>
+                    <button
                     className={`col-span-4 bg-glass p-6 flex items-center justify-between ${ desapear ? "bg-desapear" : "" }`}
                     onClick={ ()=>{ changeAnimation("/zone") } }>
                         <p className={`text-white ${ desapear ? "text-desapear" : "" }`}>Zonas</p>
                         <MdOutlineApps className={`text-white ${ desapear ? "text-desapear" : "" }`}/>
-                    </a>
-
+                    </button>
                 </div>
             </div>
         </div>

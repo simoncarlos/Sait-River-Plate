@@ -1,0 +1,19 @@
+.loader-page{
+    width: 150px;
+    filter: grayscale(.7);
+    animation: 3s infinite come-back;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes come-back{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
