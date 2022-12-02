@@ -21,19 +21,19 @@ const Header = ( ) =>{
                 <h1 className={`title-header z-10 ${ desapear ? "text-desapear" : "" }`} >22° Torneo TMT <br /> River Plate</h1>
                 <div className="md:w-80  grid grid-rows-2 grid-cols-8 gap-4">
                     <button
-                    className={`col-span-8 bg-glass p-6 flex items-center justify-between ${ desapear ? "bg-desapear" : "" }`}
+                    className={`col-span-8 bg-glass p-6 flex items-center justify-between button-animation ${ desapear ? "bg-desapear" : "" }`}
                     onClick={ ()=>{ changeAnimation("/inscription") } }>
                         <p className={`text-white ${ desapear ? "text-desapear" : "" }`}>Inscribirme</p>
                         <MdPlaylistAdd className={`text-white ${ desapear ? "text-desapear" : "" }`}/>
                     </button>
                     <button
-                    className={`col-span-4 bg-glass p-6 flex items-center justify-between ${ desapear ? "bg-desapear" : "" }`}
+                    className={`col-span-4 bg-glass p-6 flex items-center justify-between button-animation ${ desapear ? "bg-desapear" : "" }`}
                     onClick={ ()=>{ changeAnimation("/list") } }>
                         <p className={`text-white ${ desapear ? "text-desapear" : "" }`}>Listado</p>
                         <MdOutlineChecklist className={`text-white ${ desapear ? "text-desapear" : "" }`}/>
                     </button>
                     <button
-                    className={`col-span-4 bg-glass p-6 flex items-center justify-between ${ desapear ? "bg-desapear" : "" }`}
+                    className={`col-span-4 bg-glass p-6 flex items-center justify-between button-animation ${ desapear ? "bg-desapear" : "" }`}
                     onClick={ ()=>{ changeAnimation("/zone") } }>
                         <p className={`text-white ${ desapear ? "text-desapear" : "" }`}>Zonas</p>
                         <MdOutlineApps className={`text-white ${ desapear ? "text-desapear" : "" }`}/>
