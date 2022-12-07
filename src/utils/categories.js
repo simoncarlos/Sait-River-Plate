@@ -1,0 +1,1 @@
+export const categories = [ "1ra", "2da", "3ra", "4ta" ];
