@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Inscription from './components/Inscription/Inscription';
 import PlayerListContainer from './components/PlayerListContainer/PlayerListContainer';
-import ZoneContainer from './components/ZoneListContainer/ZoneContainer';
+import ZoneContainer from './components/ZoneListContainer/ZoneListContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PlayerListOptions from './components/PlayerListOptions/PlayerListOptions';
 import ZoneListOptions from './components/ZoneListOptions/ZoneListOptions';
