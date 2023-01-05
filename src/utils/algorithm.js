@@ -1,4 +1,5 @@
 import { fetchPlayers } from "./fetchPlayers";
+import { orderZones } from "./orderZones";
 
 const algorithm = async ( category ) => {
 
@@ -23,10 +24,14 @@ const algorithm = async ( category ) => {
         orderList[count].ZONE = z;
         count++;
     }
-    orderList.forEach(player => {
-        console.log(`Nombre: ${player.NOMBRES}, puntaje: ${player.PUNTAJETMT}, zona: ${player.ZONE}`);
-    });
+    let orderListZones = orderList.sort( ( player1, player2 ) =>  player1.ZONE - player2.ZONE );
+    let data = orderZones( orderListZones, amountZones, zoneOfFour );
 
+    return { data: data, zones: amountZones, zoneFour: zoneOfFour };
+    
+    //orderListZones.forEach(player => {
+    //    console.log(`Nombre: ${player.NOMBRES}, puntaje: ${player.PUNTAJETMT}, zona: ${player.ZONE}`);
+    //});
 };
 
 export default algorithm;
