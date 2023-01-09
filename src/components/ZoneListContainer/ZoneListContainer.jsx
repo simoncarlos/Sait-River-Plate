@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import algorithm from "../../utils/algorithm";
 import ZoneList from "../ZoneList/ZoneList";
 import Loader from "../Loader/Loader";
+import "./ZoneListContainer.css";
 
 const ZoneContainer = () => {
 
@@ -21,9 +22,9 @@ const ZoneContainer = () => {
     },[]);
 
     return(
-        <section className="bg-black p-10">
+        <section className="bg-black py-10 px-2">
             <h1 className="text-white text-center">Sembrado de zonas de { category } categoria</h1>
-            <div className="p-4 flex flex-col items-center justify-center">
+            <div className={ loading ? "LoaderContainer" : "ZoneListContainer" }>
                 {
                     loading
                     ? <Loader/>

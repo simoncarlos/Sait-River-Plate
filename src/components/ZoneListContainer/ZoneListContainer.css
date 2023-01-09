@@ -1,0 +1,18 @@
+.ZoneListContainer{
+    padding: 4% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.LoaderContainer{
+    height: calc( 100vh - 100px );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 768px) {
+    .ZoneListContainer{
+        padding: 4% 10%;
+    }
+}

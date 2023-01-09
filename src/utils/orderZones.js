@@ -1,9 +1,7 @@
 export const orderZones = ( list, amountZones, zoneOfFour  ) => {
-    let newArray = [];
-    let partialObjects = [];
-    list.forEach( ( element, index ) => {
-        if( ( index + 1 ) % 3 != 0 ){
-            partialObjects.push( element )
-        }
-    });
+    let newZonesGroup = [];
+    for (let index = 1; index <= amountZones; index++) {
+        newZonesGroup.push( list.filter( player => player.ZONE === index ) );
+    }
+    return newZonesGroup
 }
