@@ -3,7 +3,7 @@ import "./Loader.css";
 
 const Loader = () =>{
     return(
-        <div className="h-screen">
+        <div className="h-auto">
             <img 
             src={LogoRiver} 
             className = "loader-page"
