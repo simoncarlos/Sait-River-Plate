@@ -20,12 +20,13 @@ const Header = ( ) =>{
                 <div className={ desapear ? ("bg-filter" + " bg-desapear") : "bg-filter" }></div>
                 <h1 className={`title-header z-10 ${ desapear ? "text-desapear" : "" }`} >22° Torneo TMT <br /> River Plate</h1>
                 <div className="md:w-80  grid grid-rows-2 grid-cols-8 gap-4">
-                    <button
-                    className={`col-span-8 bg-glass p-6 flex items-center justify-between button-animation ${ desapear ? "bg-desapear" : "" }`}
-                    onClick={ ()=>{ changeAnimation("/inscription") } }>
+                    <a 
+                    href="https://api.whatsapp.com/send?phone=5491131233776&text=%C2%A1Hola!%20%C2%BFC%C3%B3mo%20estas%3F%20Me%20gustar%C3%ADa%20inscribirme%20al%2052%C2%B0%20torneo%20TMT%20%22Alvear%20Nittaku%22%20de%20este%20domingo%2015%20de%20enero%F0%9F%8F%93"
+                    target="_blank"
+                    className={`col-span-8 bg-glass p-6 flex items-center justify-between button-animation ${ desapear ? "bg-desapear" : "" }`}>
                         <p className={`text-white ${ desapear ? "text-desapear" : "" }`}>Inscribirme</p>
                         <MdPlaylistAdd className={`text-white ${ desapear ? "text-desapear" : "" }`}/>
-                    </button>
+                    </a>
                     <button
                     className={`col-span-4 bg-glass p-6 flex items-center justify-between button-animation ${ desapear ? "bg-desapear" : "" }`}
                     onClick={ ()=>{ changeAnimation("/list") } }>
