@@ -27,7 +27,7 @@ const PlayerListContainer = () => {
     return(
         <section className="bg-black p-10">
             <h1 className="text-white text-center">Listado de inscriptos de { category } categoria</h1>
-            <div className="p-4 flex flex-col items-center justify-center">
+            <div className={ loading ? "LoaderContainer" : "PlayerListContainer" }>
                 {
                     loading
                     ? <Loader/>
